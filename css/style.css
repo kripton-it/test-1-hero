@@ -39,6 +39,7 @@ img {
 }
 
 .container {
+  min-width: 230px;
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
@@ -99,6 +100,46 @@ img {
 .my-team__item {
   width: 23.2%;
   margin-right: 2.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .my-team__item {
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .my-team__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .my-team__item:nth-child(n+4) {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .my-team__item {
+    width: 48%;
+    margin-right: 4%;
+  }
+
+  .my-team__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .my-team__item:nth-child(n+3) {
+    display: none;
+  }
+
+  .my-team h2 {
+    margin-bottom: 100px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 .my-team__item:nth-child(4n) {
@@ -136,7 +177,12 @@ img {
 
 .hero__date {
   margin: 0;
+  margin-top: auto;
   padding: 0;
+}
+
+.hero__date time {
+  display: block;
 }
 
 .slider {
@@ -239,7 +285,7 @@ img {
 }
 
 .add__form {
-  width: 750px;
+  max-width: 750px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -272,6 +318,20 @@ img {
   margin-bottom: 23px;
 }
 
+@media (max-width: 560px) {
+  .add h2 {
+    margin-bottom: 50px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .form__name,
+  .form__title {
+    width: 100%;
+  }
+}
+
 .form__name input,
 .form__title input {
   box-sizing: border-box;
@@ -294,6 +354,12 @@ img {
   margin-bottom: 87px;
 }
 
+@media (max-width: 560px) {
+  .form__photo {
+    margin-bottom: 20px;
+  }
+}
+
 .form__photo input {
   position: absolute;
   top: 28px;
@@ -309,6 +375,8 @@ img {
   box-sizing: border-box;
   padding-top: 42px;
   padding-bottom: 42px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   font-weight: 300;
   font-size: 12px;
@@ -343,6 +411,7 @@ img {
 .footer {
   color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -371,6 +440,7 @@ img {
 
 .footer__social {
   width: 195px;
+  margin-left: auto;
 }
 
 .social__list {
@@ -413,4 +483,20 @@ img {
 
 .social__link--lin {
   background-image: url(../img/icon-lin.png);
+}
+
+@media (max-width: 560px) {
+  .footer {
+    display: block;
+  }
+
+  .footer__copyright {
+    margin-bottom: 20px;
+    text-align: center;
+    width: auto;
+  }
+
+  .footer__social {
+    margin-right: auto;
+  }
 }
