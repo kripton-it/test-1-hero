@@ -52,6 +52,7 @@ img {
 
 .my-team h2 {
   margin: 0;
+  position: relative;
   margin-bottom: 135px;
   padding: 0;
 
@@ -61,6 +62,26 @@ img {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.my-team h2::before,
+.my-team h2::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background-color: #e8aa4e;
+  left: 50%;
+  transform: translateX(-53%);
+}
+
+.my-team h2::before {
+  width: 99px;
+  bottom: -28px;
+}
+
+.my-team h2::after {
+  width: 67px;
+  bottom: -42px;
 }
 
 .my-team .my-super-team {
@@ -173,6 +194,7 @@ img {
 }
 
 .add h2 {
+  position: relative;
   margin: 0;
   margin-bottom: 96px;
   padding: 0;
@@ -184,6 +206,26 @@ img {
   text-align: center;
   color: #272727;
   text-transform: uppercase;
+}
+
+.add h2::before,
+.add h2::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background-color: #e8aa4e;
+  left: 50%;
+  transform: translateX(-53%);
+}
+
+.add h2::before {
+  width: 99px;
+  bottom: -26px;
+}
+
+.add h2::after {
+  width: 67px;
+  bottom: -40px;
 }
 
 .add__hero {
