@@ -64,17 +64,20 @@
     <section class="add container">
       <h2>Добавь своего <span class="add__hero">героя</span></h2>
       <form class="add__form form" action="#" method="post">
-        <p class="form__input">
+        <p class="form__name">
           <label class="required-label" for="name">Имя</label>
           <input type="text" name="name" id="name" required>
         </p>
-        <p class="form__input">
+        <p class="form__title">
           <label class="required-label" for="title">Титул</label>
           <input type="text" name="title" id="title" required>
         </p>
-        <p class="form__input">
+        <p class="form__photo drag-and-drop">
           <label class="required-label" for="photo">Фото</label>
           <input type="file" name="photo" id="photo" required>
+          <span class="form__photo-draganddrop">
+            Чтобы добавить фото героя перетащите изображение в это поле или просто кликните сюда
+          </span>
         </p>
         <button class="form__button" type="submit">Принять</button>
       </form>
