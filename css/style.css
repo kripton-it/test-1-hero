@@ -36,6 +36,13 @@ img {
   height: auto;
 }
 
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
 .my-team {
   background-color: #222222;
   color: #ffffff;
@@ -57,9 +64,20 @@ img {
 }
 
 .my-team__list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.my-team__item {
+  width: 23.2%;
+  outline: 1px solid green;
+  margin-right: 2.4%;
+}
+
+.my-team__item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .hero {
