@@ -1,4 +1,5 @@
 body {
+  padding-top: 89px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -37,7 +38,7 @@ img {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
@@ -50,6 +51,7 @@ img {
 
 .my-team h2 {
   margin: 0;
+  margin-bottom: 135px;
   padding: 0;
   font-weight: 300;
   font-size: 44px;
@@ -72,7 +74,6 @@ img {
 
 .my-team__item {
   width: 23.2%;
-  outline: 1px solid green;
   margin-right: 2.4%;
 }
 
@@ -86,10 +87,12 @@ img {
 
 .hero__image {
   border-radius: 50%;
+  margin-bottom: 9px;
 }
 
 .hero__name {
   margin: 0;
+  margin-bottom: 27px;
   padding: 0;
   color: #ffffff;
   font-size: 20px;
@@ -98,6 +101,8 @@ img {
 }
 
 .hero__title {
+  display: block;
+  margin-top: 1px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -107,10 +112,44 @@ img {
   padding: 0;
 }
 
+.slider {
+  padding-bottom: 184px;
+  position: relative;
+}
+
 .slider__controls {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 83px;
+}
+
+.slider__button {
+  display: block;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.slider__controls-item {
+  margin-right: 13px;
+}
+
+.slider__controls-item--active .slider__button {
+  background-color: #e8aa4e;
+  border: none;
+}
+
+.slider__controls-item:last-child {
+  margin-right: 0;
 }
 
 .add {
