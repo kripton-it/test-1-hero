@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Тестовое задание</title>
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <title>Тестовое задание</title>
+</head>
 
+<body>
 
-  </body>
+  <main>
+    <h1 class="visually-hidden">Название сайта</h1>
+    <section class="my-team slider">
+      <h2>Моя супер команда</h2>
+      <ul class="my-team__list slider__list">
+        <li class="my-team__item slider__item hero">
+          <img class="hero__image" src="img/slide-1.jpg" alt="Имя персонажа">
+          <h3 class="hero__name">Джейсон Стейтем <span class="hero__title">Мастер ножей</span></h3>
+          <p class="hero__date">
+            Дата вступления в команду:
+            <time datetime="1967-08-26">26.08.1967</time>
+          </p>
+        </li>
+        <li class="my-team__item slider__item hero">
+          <img class="hero__image" src="img/slide-2.jpg" alt="Имя персонажа">
+          <h3 class="hero__name">Ван Дамм <span class="hero__title">Танцор</span></h3>
+          <p class="hero__date">
+            Дата вступления в команду:
+            <time datetime="1960-10-18">18.10.1960</time>
+          </p>
+        </li>
+        <li class="my-team__item slider__item hero">
+          <img class="hero__image" src="img/slide-3.jpg" alt="Имя персонажа">
+          <h3 class="hero__name">Сильвестр Сталлоне <span class="hero__title">Полуликий</span></h3>
+          <p class="hero__date">
+            Дата вступления в команду:
+            <time datetime="1946-08-06">06.08.1946</time>
+          </p>
+        </li>
+        <li class="my-team__item slider__item hero">
+          <img class="hero__image" src="img/slide-4.jpg" alt="Имя персонажа">
+          <h3 class="hero__name">Джет Ли <span class="hero__title">Фанат Брюса</span></h3>
+          <p class="hero__date">
+            Дата вступления в команду:
+            <time datetime="1973-02-27">27.02.1973</time>
+          </p>
+        </li>
+      </ul>
+      <ul class="slider__controls">
+        <li class="slider__controls-item slider__controls-item--active">
+          <button class="slider__button" type="button"><span class="visually-hidden">Первый слайд</span></button>
+        </li>
+        <li class="slider__controls-item">
+          <button class="slider__button" type="button"><span class="visually-hidden">Второй слайд</span></button>
+        </li>
+        <li class="slider__controls-item">
+          <button class="slider__button" type="button"><span class="visually-hidden">Третий слайд</span></button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+
 </html>
